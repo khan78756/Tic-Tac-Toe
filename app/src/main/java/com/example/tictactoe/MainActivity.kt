@@ -71,8 +71,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener
         screen=findViewById(R.id.screen)
         turnX=findViewById(R.id.turnX)
 
-        turnX.setTextColor(Color.BLACK)
-        screen.setTextColor(Color.BLACK)
+
         //Clicklisner
 
         fillpos= intArrayOf(-1,-1,-1,-1,-1,-1,-1,-1,-1)
