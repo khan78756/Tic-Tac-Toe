@@ -1,5 +1,6 @@
 package com.example.tictactoe
 
+import android.annotation.SuppressLint
 import android.content.DialogInterface
 import android.graphics.Color
 import android.os.Build
@@ -50,6 +51,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val exit=findViewById<Button>(R.id.btnexit)
+
+
+        exit.setOnClickListener {
+            finish()
+        }
+
         //for get Id
         b1=findViewById(R.id.b1)
         b2=findViewById(R.id.b2)
@@ -63,8 +71,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener
         screen=findViewById(R.id.screen)
         turnX=findViewById(R.id.turnX)
 
-        turnX.setTextColor(Color.GREEN)
-        screen.setTextColor(Color.MAGENTA)
+        turnX.setTextColor(Color.BLACK)
+        screen.setTextColor(Color.BLACK)
         //Clicklisner
 
         fillpos= intArrayOf(-1,-1,-1,-1,-1,-1,-1,-1,-1)
@@ -83,6 +91,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener
     //Funtion For functionalities
 
 
+    @SuppressLint("ResourceType")
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onClick(v: View?)
 
@@ -102,14 +111,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener
             activeplayer = player2
 
             screen.setText("Player-2 Turn")
-            buttonclicked.setTextColor(Color.MAGENTA)
+            buttonclicked.setTextColor(Color.WHITE)
 
         } else
         {
             buttonclicked.setText("x")
             activeplayer = player1
             screen.setText("Player-1 Turn")
-            buttonclicked.setTextColor(Color.MAGENTA)
+            buttonclicked.setTextColor(Color.WHITE)
 
         }
         checkforwin()
