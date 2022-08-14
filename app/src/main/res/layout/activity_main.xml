@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#39000000"
+    android:background="#1B000000"
     tools:context=".MainActivity">
 
     <View
@@ -64,11 +64,11 @@
 
         <LinearLayout style="@style/row">
 
-            <Button
+            <android.widget.Button
                 android:id="@+id/b1"
                 style="@style/column"
                 android:tag="0"
-                tools:text="1"></Button>
+                tools:text="1"></android.widget.Button>
 
             <View
                 android:layout_width="5dp"
@@ -76,11 +76,11 @@
                 android:background="@color/teal_200" />
 
 
-            <Button
+            <android.widget.Button
                 android:id="@+id/b2"
                 style="@style/column"
                 android:tag="1"
-                tools:text="2"></Button>
+                tools:text="2"></android.widget.Button>
 
             <View
                 android:layout_width="5dp"
@@ -88,11 +88,11 @@
                 android:background="@color/teal_200" />
 
 
-            <Button
+            <android.widget.Button
                 android:id="@+id/b3"
                 style="@style/column"
                 android:tag="2"
-                tools:text="3"></Button>
+                tools:text="3"></android.widget.Button>
         </LinearLayout>
 
         <View
@@ -103,11 +103,11 @@
 
         <LinearLayout style="@style/row">
 
-            <Button
+            <android.widget.Button
                 android:id="@+id/b4"
                 style="@style/column"
                 android:tag="3"
-                tools:text="4"></Button>
+                tools:text="4"></android.widget.Button>
 
             <View
                 android:layout_width="5dp"
@@ -115,22 +115,22 @@
                 android:background="@color/teal_200" />
 
 
-            <Button
+            <android.widget.Button
                 android:id="@+id/b5"
                 style="@style/column"
                 android:tag="4"
-                tools:text="5"></Button>
+                tools:text="5"></android.widget.Button>
 
             <View
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:background="@color/teal_200" />
 
-            <Button
+            <android.widget.Button
                 android:id="@+id/b6"
                 style="@style/column"
                 android:tag="5"
-                tools:text="6"></Button>
+                tools:text="6"></android.widget.Button>
         </LinearLayout>
 
         <View
@@ -140,33 +140,33 @@
 
         <LinearLayout style="@style/row">
 
-            <Button
+            <android.widget.Button
                 android:id="@+id/b7"
                 style="@style/column"
                 android:tag="6"
-                tools:text="7"></Button>
+                tools:text="7"></android.widget.Button>
 
             <View
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:background="@color/teal_200" />
 
-            <Button
+            <android.widget.Button
                 android:id="@+id/b8"
                 style="@style/column"
                 android:tag="7"
-                tools:text="8"></Button>
+                tools:text="8"></android.widget.Button>
 
             <View
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:background="@color/teal_200" />
 
-            <Button
+            <android.widget.Button
                 android:id="@+id/b9"
                 style="@style/column"
                 android:tag="8"
-                tools:text="9"></Button>
+                tools:text="9"></android.widget.Button>
         </LinearLayout>
     </LinearLayout>
 
