@@ -46,6 +46,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener
         binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.title="Easy"
+
         val exit=findViewById<Button>(R.id.btnexit)
 
 
@@ -91,14 +93,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener
             activeplayer = player2
 
            binding.screen.setText("Player-2 Turn")
-            buttonclicked.setTextColor(Color.WHITE)
 
         } else
         {
             buttonclicked.setText("x")
             activeplayer = player1
             binding.screen.setText("Player-1 Turn")
-            buttonclicked.setTextColor(Color.WHITE)
 
         }
         checkforwin()
