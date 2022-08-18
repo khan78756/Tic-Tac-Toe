@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".medium">
+
+    <TextView
+        android:id="@+id/turnX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="16dp"
+        android:text="Tic Tac Toe"
+        android:textColor="@color/teal_200"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="Player -1 Turn"
+        android:textColor="@color/teal_200"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turnX" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen">
+
+        <LinearLayout style="@style/row">
+
+            <android.widget.Button
+                android:id="@+id/b1"
+                style="@style/column"
+                android:tag="0"
+                android:textColor="#32116a"
+                tools:text="1"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b2"
+                style="@style/column"
+                android:tag="1"
+                android:textColor="#32116a"
+                tools:text="2"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b3"
+                style="@style/column"
+                android:tag="2"
+                android:textColor="#32116a"
+                tools:text="3"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b4"
+                style="@style/column"
+                android:tag="3"
+                android:textColor="#32116a"
+                tools:text="3"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b5"
+                style="@style/column"
+                android:tag="4"
+                android:textColor="#32116a"
+                tools:text="3"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b6"
+                style="@style/column"
+                android:tag="5"
+                android:textColor="#32116a"
+                tools:text="3"></android.widget.Button>
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:background="@color/teal_200" />
+
+
+        <LinearLayout style="@style/row">
+
+            <android.widget.Button
+                android:id="@+id/b7"
+                style="@style/column"
+                android:textColor="#32116a"
+                android:tag="6"
+                tools:text="4"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b8"
+                style="@style/column"
+                android:textColor="#32116a"
+                android:tag="7"
+                tools:text="5"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+            <android.widget.Button
+                android:id="@+id/b9"
+                style="@style/column"
+                android:textColor="#32116a"
+                android:tag="8"
+                tools:text="6"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b10"
+                style="@style/column"
+                android:tag="9"
+                android:textColor="#32116a"
+                tools:text="3"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b11"
+                style="@style/column"
+                android:tag="10"
+                android:textColor="#32116a"
+                tools:text="3"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b12"
+                style="@style/column"
+                android:tag="11"
+                android:textColor="#32116a"
+                tools:text="3"></android.widget.Button>
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:background="@color/teal_200" />
+
+        <LinearLayout style="@style/row">
+
+            <android.widget.Button
+                android:id="@+id/b13"
+                style="@style/column"
+                android:textColor="#32116a"
+                android:tag="12"
+                tools:text="7"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+            <android.widget.Button
+                android:id="@+id/b14"
+                style="@style/column"
+                android:textColor="#32116a"
+                android:tag="13"
+                tools:text="8"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+            <android.widget.Button
+                android:id="@+id/b15"
+                style="@style/column"
+                android:textColor="#32116a"
+                android:tag="14"
+                tools:text="9"></android.widget.Button>
+
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b16"
+                style="@style/column"
+                android:tag="15"
+                android:textColor="#32116a"
+                tools:text="3"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b17"
+                style="@style/column"
+                android:tag="16"
+                android:textColor="#32116a"
+                tools:text="3"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b18"
+                style="@style/column"
+                android:tag="17"
+                android:textColor="#32116a"
+                tools:text="3"></android.widget.Button>
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:background="@color/teal_200" />
+
+        <LinearLayout style="@style/row">
+
+            <android.widget.Button
+                android:id="@+id/b19"
+                style="@style/column"
+                android:textColor="#32116a"
+                android:tag="18"
+                tools:text="7"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+            <android.widget.Button
+                android:id="@+id/b20"
+                style="@style/column"
+                android:textColor="#32116a"
+                android:tag="19"
+                tools:text="8"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+            <android.widget.Button
+                android:id="@+id/b21"
+                style="@style/column"
+                android:textColor="#32116a"
+                android:tag="20"
+                tools:text="9"></android.widget.Button>
+
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b22"
+                style="@style/column"
+                android:tag="21"
+                android:textColor="#32116a"
+                tools:text="3"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b23"
+                style="@style/column"
+                android:tag="22"
+                android:textColor="#32116a"
+                tools:text="3"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b24"
+                style="@style/column"
+                android:tag="23"
+                android:textColor="#32116a"
+                tools:text="3"></android.widget.Button>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:background="@color/teal_200" />
+
+        <LinearLayout style="@style/row">
+
+            <android.widget.Button
+                android:id="@+id/b25"
+                style="@style/column"
+                android:textColor="#32116a"
+                android:tag="24"
+                tools:text="7"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+            <android.widget.Button
+                android:id="@+id/b26"
+                style="@style/column"
+                android:textColor="#32116a"
+                android:tag="25"
+                tools:text="8"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+            <android.widget.Button
+                android:id="@+id/b27"
+                style="@style/column"
+                android:textColor="#32116a"
+                android:tag="26"
+                tools:text="9"></android.widget.Button>
+
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b28"
+                style="@style/column"
+                android:tag="27"
+                android:textColor="#32116a"
+                tools:text="3"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b29"
+                style="@style/column"
+                android:tag="28"
+                android:textColor="#32116a"
+                tools:text="3"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b30"
+                style="@style/column"
+                android:tag="29"
+                android:textColor="#32116a"
+                tools:text="3"></android.widget.Button>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:background="@color/teal_200" />
+
+        <LinearLayout style="@style/row">
+
+            <android.widget.Button
+                android:id="@+id/b31"
+                style="@style/column"
+                android:textColor="#32116a"
+                android:tag="30"
+                tools:text="7"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+            <android.widget.Button
+                android:id="@+id/b32"
+                style="@style/column"
+                android:textColor="#32116a"
+                android:tag="31"
+                tools:text="8"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+            <android.widget.Button
+                android:id="@+id/b33"
+                style="@style/column"
+                android:textColor="#32116a"
+                android:tag="32"
+                tools:text="9"></android.widget.Button>
+
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b34"
+                style="@style/column"
+                android:tag="33"
+                android:textColor="#32116a"
+                tools:text="3"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b35"
+                style="@style/column"
+                android:tag="34"
+                android:textColor="#32116a"
+                tools:text="3"></android.widget.Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200" />
+
+
+            <android.widget.Button
+                android:id="@+id/b36"
+                style="@style/column"
+                android:tag="35"
+                android:textColor="#32116a"
+                tools:text="3"></android.widget.Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnexit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#32116a"
+        android:text="Back"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
