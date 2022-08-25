@@ -139,8 +139,8 @@
             <android.widget.Button
                 android:id="@+id/b7"
                 style="@style/column"
-                android:textColor="#32116a"
                 android:tag="6"
+                android:textColor="#32116a"
                 tools:text="7"></android.widget.Button>
 
             <View
@@ -152,8 +152,8 @@
             <android.widget.Button
                 android:id="@+id/b8"
                 style="@style/column"
-                android:textColor="#32116a"
                 android:tag="7"
+                android:textColor="#32116a"
                 tools:text="8"></android.widget.Button>
 
             <View
@@ -164,8 +164,8 @@
             <android.widget.Button
                 android:id="@+id/b9"
                 style="@style/column"
-                android:textColor="#32116a"
                 android:tag="8"
+                android:textColor="#32116a"
                 tools:text="9"></android.widget.Button>
 
             <View
@@ -218,8 +218,8 @@
             <android.widget.Button
                 android:id="@+id/b13"
                 style="@style/column"
-                android:textColor="#32116a"
                 android:tag="12"
+                android:textColor="#32116a"
                 tools:text="13"></android.widget.Button>
 
             <View
@@ -230,8 +230,8 @@
             <android.widget.Button
                 android:id="@+id/b14"
                 style="@style/column"
-                android:textColor="#32116a"
                 android:tag="13"
+                android:textColor="#32116a"
                 tools:text="14"></android.widget.Button>
 
             <View
@@ -242,8 +242,8 @@
             <android.widget.Button
                 android:id="@+id/b15"
                 style="@style/column"
-                android:textColor="#32116a"
                 android:tag="14"
+                android:textColor="#32116a"
                 tools:text="15"></android.widget.Button>
 
 
@@ -297,8 +297,8 @@
             <android.widget.Button
                 android:id="@+id/b19"
                 style="@style/column"
-                android:textColor="#32116a"
                 android:tag="18"
+                android:textColor="#32116a"
                 tools:text="19"></android.widget.Button>
 
             <View
@@ -309,8 +309,8 @@
             <android.widget.Button
                 android:id="@+id/b20"
                 style="@style/column"
-                android:textColor="#32116a"
                 android:tag="19"
+                android:textColor="#32116a"
                 tools:text="20"></android.widget.Button>
 
             <View
@@ -321,8 +321,8 @@
             <android.widget.Button
                 android:id="@+id/b21"
                 style="@style/column"
-                android:textColor="#32116a"
                 android:tag="20"
+                android:textColor="#32116a"
                 tools:text="21"></android.widget.Button>
 
 
@@ -377,8 +377,8 @@
             <android.widget.Button
                 android:id="@+id/b25"
                 style="@style/column"
-                android:textColor="#32116a"
                 android:tag="24"
+                android:textColor="#32116a"
                 tools:text="25"></android.widget.Button>
 
             <View
@@ -389,8 +389,8 @@
             <android.widget.Button
                 android:id="@+id/b26"
                 style="@style/column"
-                android:textColor="#32116a"
                 android:tag="25"
+                android:textColor="#32116a"
                 tools:text="26"></android.widget.Button>
 
             <View
@@ -401,8 +401,8 @@
             <android.widget.Button
                 android:id="@+id/b27"
                 style="@style/column"
-                android:textColor="#32116a"
                 android:tag="26"
+                android:textColor="#32116a"
                 tools:text="27"></android.widget.Button>
 
 
@@ -457,8 +457,8 @@
             <android.widget.Button
                 android:id="@+id/b31"
                 style="@style/column"
-                android:textColor="#32116a"
                 android:tag="30"
+                android:textColor="#32116a"
                 tools:text="31"></android.widget.Button>
 
             <View
@@ -469,8 +469,8 @@
             <android.widget.Button
                 android:id="@+id/b32"
                 style="@style/column"
-                android:textColor="#32116a"
                 android:tag="31"
+                android:textColor="#32116a"
                 tools:text="32"></android.widget.Button>
 
             <View
@@ -481,8 +481,8 @@
             <android.widget.Button
                 android:id="@+id/b33"
                 style="@style/column"
-                android:textColor="#32116a"
                 android:tag="32"
+                android:textColor="#32116a"
                 tools:text="33"></android.widget.Button>
 
 
@@ -530,16 +530,17 @@
 
     <Button
         android:id="@+id/btnexit"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
+        android:layout_marginHorizontal="30dp"
         android:layout_marginBottom="40dp"
         android:backgroundTint="#32116a"
         android:text="Back"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
