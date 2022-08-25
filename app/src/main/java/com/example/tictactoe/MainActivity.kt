@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener
 
     //For Locking of the Buttons
 
-    lateinit var fillpos:IntArray
+    lateinit var fillpos1:IntArray
 
 
     //For players turns
@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener
 
         //Clicklisner
 
-        fillpos= intArrayOf(-1,-1,-1,-1,-1,-1,-1,-1,-1)
+        fillpos1= intArrayOf(-1,-1,-1,-1,-1,-1,-1,-1,-1)
 
         binding.b1.setOnClickListener(this)
         binding.b2.setOnClickListener(this)
@@ -83,9 +83,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener
 
         var buttonclicked = findViewById<Button>(v!!.id)
         var clicktag = Integer.parseInt(buttonclicked.tag.toString())
-        if (fillpos[clicktag] != -1)
+        if (fillpos1[clicktag] != -1)
             return
-        fillpos[clicktag] = activeplayer
+        fillpos1[clicktag] = activeplayer
 
         if (activeplayer == player1)
         {
@@ -94,11 +94,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener
 
            binding.screen.setText("Player-2 Turn")
 
+           // buttonclicked.setTextColor(Color.parseColor())
+
+
         } else
         {
             buttonclicked.setText("x")
             activeplayer = player1
             binding.screen.setText("Player-1 Turn")
+
+           // buttonclicked.setTextColor(Color.WHITE)
 
         }
         checkforwin()
@@ -117,11 +122,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener
                 var v1 = winpos[i][0]
                 var v2 = winpos[i][1]
                 var v3 = winpos[i][2]
-                if (fillpos[v1] == fillpos[v2] && fillpos[v1] == fillpos[v3]) {
-                    if (fillpos[v1] != -1)
+                if (fillpos1[v1] == fillpos1[v2] && fillpos1[v1] == fillpos1[v3]) {
+                    if (fillpos1[v1] != -1)
                     // gameactive=false
                     {
-                        if (fillpos[v1] == player1) {
+                        if (fillpos1[v1] == player1) {
                            showmessage("Player-1 is winner")
                             //   screen.setText("p1 win")
                             gameactive = false
@@ -140,8 +145,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener
 
 
             var count=0
-            for (i in 0 until fillpos.size)
-                if(fillpos[i]==-1)
+            for (i in 0 until fillpos1.size)
+                if(fillpos1[i]==-1)
             {
              count++
             }
@@ -175,7 +180,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener
        //Funtion For restart of Game
 
     private fun restartgame() {
-      fillpos=intArrayOf(-1,-1,-1,-1,-1,-1,-1,-1,-1)
+      fillpos1=intArrayOf(-1,-1,-1,-1,-1,-1,-1,-1,-1)
         activeplayer=player1
         gameactive=true
         binding.screen.setText("Player-1 Turn")

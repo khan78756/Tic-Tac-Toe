@@ -7,6 +7,14 @@
     android:background="@drawable/gradient"
     tools:context=".MainActivity">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/turnX"
@@ -16,8 +24,8 @@
         android:layout_marginBottom="10dp"
         android:padding="16dp"
         android:text="Tic Tac Toe"
-        android:textColor="@color/teal_200"
         android:textSize="35dp"
+        android:textColor="@color/teal_200"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/screen"
         app:layout_constraintDimensionRatio="1:1"
@@ -36,9 +44,9 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="30dp"
         android:text="Player -1 Turn"
-        android:textColor="@color/teal_200"
         android:textSize="25dp"
         android:textStyle="bold"
+        android:textColor="@color/teal_200"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,7 +71,7 @@
                 style="@style/column"
                 android:tag="0"
                 android:textColor="#32116a"
-                tools:text="1"></android.widget.Button>
+                tools:text="1"/>
 
             <View
                 android:layout_width="5dp"
@@ -76,7 +84,7 @@
                 style="@style/column"
                 android:tag="1"
                 android:textColor="#32116a"
-                tools:text="2"></android.widget.Button>
+                tools:text="2"/>
 
             <View
                 android:layout_width="5dp"
@@ -89,7 +97,7 @@
                 style="@style/column"
                 android:tag="2"
                 android:textColor="#32116a"
-                tools:text="3"></android.widget.Button>
+                tools:text="3"/>
         </LinearLayout>
 
         <View
@@ -105,7 +113,7 @@
                 style="@style/column"
                 android:tag="3"
                 android:textColor="#32116a"
-                tools:text="4"></android.widget.Button>
+                tools:text="4"/>
 
             <View
                 android:layout_width="5dp"
@@ -118,7 +126,7 @@
                 style="@style/column"
                 android:tag="4"
                 android:textColor="#32116a"
-                tools:text="5"></android.widget.Button>
+                tools:text="5"/>
 
             <View
                 android:layout_width="5dp"
@@ -130,7 +138,7 @@
                 style="@style/column"
                 android:tag="5"
                 android:textColor="#32116a"
-                tools:text="6"></android.widget.Button>
+                tools:text="6"/>
         </LinearLayout>
 
         <View
@@ -145,7 +153,7 @@
                 style="@style/column"
                 android:tag="6"
                 android:textColor="#32116a"
-                tools:text="7"></android.widget.Button>
+                tools:text="7"/>
 
             <View
                 android:layout_width="5dp"
@@ -157,7 +165,7 @@
                 style="@style/column"
                 android:tag="7"
                 android:textColor="#32116a"
-                tools:text="8"></android.widget.Button>
+                tools:text="8"/>
 
             <View
                 android:layout_width="5dp"
@@ -169,7 +177,8 @@
                 style="@style/column"
                 android:tag="8"
                 android:textColor="#32116a"
-                tools:text="9"></android.widget.Button>
+                tools:text="9"/>
+
         </LinearLayout>
     </LinearLayout>
 
@@ -180,7 +189,7 @@
         android:layout_marginHorizontal="30dp"
         android:layout_marginBottom="40dp"
         android:backgroundTint="#32116a"
-        android:text="Back"
+        android:text="Exit"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

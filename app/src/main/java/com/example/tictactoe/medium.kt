@@ -3,23 +3,21 @@ package com.example.tictactoe
 import android.annotation.SuppressLint
 import android.content.DialogInterface
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import com.example.tictactoe.databinding.ActivityMediumBinding
 
-class medium : AppCompatActivity(), View.OnClickListener {
+class medium : AppCompatActivity(), View.OnClickListener{
 
     private lateinit var binding: ActivityMediumBinding
 
     //For Locking of the Buttons
 
     lateinit var fillpos:IntArray
-
 
     //For players turns
 
@@ -34,6 +32,8 @@ class medium : AppCompatActivity(), View.OnClickListener {
 
     var gameactive= true
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding=ActivityMediumBinding.inflate(layoutInflater)
@@ -45,6 +45,7 @@ class medium : AppCompatActivity(), View.OnClickListener {
         binding.btnexit.setOnClickListener {
             finish()
         }
+
 
         //Clicklisner
 
@@ -258,5 +259,6 @@ class medium : AppCompatActivity(), View.OnClickListener {
         binding.b34.setText("")
         binding.b35.setText("")
         binding.b36.setText("")
+
     }
 }

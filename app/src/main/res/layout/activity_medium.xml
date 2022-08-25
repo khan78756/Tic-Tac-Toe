@@ -99,7 +99,8 @@
                 style="@style/column"
                 android:tag="3"
                 android:textColor="#32116a"
-                tools:text="4"></android.widget.Button>
+                tools:text="4" />
+
 
             <View
                 android:layout_width="5dp"
@@ -112,7 +113,8 @@
                 style="@style/column"
                 android:tag="4"
                 android:textColor="#32116a"
-                tools:text="5"></android.widget.Button>
+                tools:text="5" />
+
 
             <View
                 android:layout_width="5dp"
@@ -125,7 +127,7 @@
                 style="@style/column"
                 android:tag="5"
                 android:textColor="#32116a"
-                tools:text="6"></android.widget.Button>
+                tools:text="6" />
         </LinearLayout>
 
         <View
@@ -141,7 +143,7 @@
                 style="@style/column"
                 android:tag="6"
                 android:textColor="#32116a"
-                tools:text="7"></android.widget.Button>
+                tools:text="7" />
 
             <View
                 android:layout_width="5dp"
@@ -154,7 +156,7 @@
                 style="@style/column"
                 android:tag="7"
                 android:textColor="#32116a"
-                tools:text="8"></android.widget.Button>
+                tools:text="8" />
 
             <View
                 android:layout_width="5dp"
@@ -166,7 +168,7 @@
                 style="@style/column"
                 android:tag="8"
                 android:textColor="#32116a"
-                tools:text="9"></android.widget.Button>
+                tools:text="9" />
 
             <View
                 android:layout_width="5dp"
@@ -179,7 +181,7 @@
                 style="@style/column"
                 android:tag="9"
                 android:textColor="#32116a"
-                tools:text="10"></android.widget.Button>
+                tools:text="10" />
 
             <View
                 android:layout_width="5dp"
@@ -192,7 +194,7 @@
                 style="@style/column"
                 android:tag="10"
                 android:textColor="#32116a"
-                tools:text="11"></android.widget.Button>
+                tools:text="11" />
 
             <View
                 android:layout_width="5dp"
@@ -205,7 +207,7 @@
                 style="@style/column"
                 android:tag="11"
                 android:textColor="#32116a"
-                tools:text="12"></android.widget.Button>
+                tools:text="12" />
         </LinearLayout>
 
         <View
@@ -220,7 +222,7 @@
                 style="@style/column"
                 android:tag="12"
                 android:textColor="#32116a"
-                tools:text="13"></android.widget.Button>
+                tools:text="13" />
 
             <View
                 android:layout_width="5dp"
@@ -232,7 +234,7 @@
                 style="@style/column"
                 android:tag="13"
                 android:textColor="#32116a"
-                tools:text="14"></android.widget.Button>
+                tools:text="14" />
 
             <View
                 android:layout_width="5dp"
@@ -244,7 +246,7 @@
                 style="@style/column"
                 android:tag="14"
                 android:textColor="#32116a"
-                tools:text="15"></android.widget.Button>
+                tools:text="15" />
 
 
             <View
@@ -258,7 +260,7 @@
                 style="@style/column"
                 android:tag="15"
                 android:textColor="#32116a"
-                tools:text="16"></android.widget.Button>
+                tools:text="16" />
 
             <View
                 android:layout_width="5dp"
@@ -271,7 +273,7 @@
                 style="@style/column"
                 android:tag="16"
                 android:textColor="#32116a"
-                tools:text="17"></android.widget.Button>
+                tools:text="17" />
 
             <View
                 android:layout_width="5dp"
@@ -284,7 +286,7 @@
                 style="@style/column"
                 android:tag="17"
                 android:textColor="#32116a"
-                tools:text="18"></android.widget.Button>
+                tools:text="18" />
         </LinearLayout>
 
         <View
@@ -299,7 +301,7 @@
                 style="@style/column"
                 android:tag="18"
                 android:textColor="#32116a"
-                tools:text="19"></android.widget.Button>
+                tools:text="19" />
 
             <View
                 android:layout_width="5dp"
@@ -311,7 +313,7 @@
                 style="@style/column"
                 android:tag="19"
                 android:textColor="#32116a"
-                tools:text="20"></android.widget.Button>
+                tools:text="20" />
 
             <View
                 android:layout_width="5dp"
@@ -323,7 +325,7 @@
                 style="@style/column"
                 android:tag="20"
                 android:textColor="#32116a"
-                tools:text="21"></android.widget.Button>
+                tools:text="21" />
 
 
             <View
@@ -337,7 +339,7 @@
                 style="@style/column"
                 android:tag="21"
                 android:textColor="#32116a"
-                tools:text="22"></android.widget.Button>
+                tools:text="22" />
 
             <View
                 android:layout_width="5dp"
@@ -350,7 +352,7 @@
                 style="@style/column"
                 android:tag="22"
                 android:textColor="#32116a"
-                tools:text="23"></android.widget.Button>
+                tools:text="23" />
 
             <View
                 android:layout_width="5dp"
@@ -363,7 +365,7 @@
                 style="@style/column"
                 android:tag="23"
                 android:textColor="#32116a"
-                tools:text="24"></android.widget.Button>
+                tools:text="24" />
         </LinearLayout>
 
 
@@ -379,7 +381,7 @@
                 style="@style/column"
                 android:tag="24"
                 android:textColor="#32116a"
-                tools:text="25"></android.widget.Button>
+                tools:text="25" />
 
             <View
                 android:layout_width="5dp"
@@ -391,7 +393,7 @@
                 style="@style/column"
                 android:tag="25"
                 android:textColor="#32116a"
-                tools:text="26"></android.widget.Button>
+                tools:text="26" />
 
             <View
                 android:layout_width="5dp"
@@ -403,7 +405,7 @@
                 style="@style/column"
                 android:tag="26"
                 android:textColor="#32116a"
-                tools:text="27"></android.widget.Button>
+                tools:text="27" />
 
 
             <View
@@ -417,7 +419,7 @@
                 style="@style/column"
                 android:tag="27"
                 android:textColor="#32116a"
-                tools:text="28"></android.widget.Button>
+                tools:text="28" />
 
             <View
                 android:layout_width="5dp"
@@ -430,7 +432,7 @@
                 style="@style/column"
                 android:tag="28"
                 android:textColor="#32116a"
-                tools:text="29"></android.widget.Button>
+                tools:text="29" />
 
             <View
                 android:layout_width="5dp"
@@ -443,7 +445,7 @@
                 style="@style/column"
                 android:tag="29"
                 android:textColor="#32116a"
-                tools:text="30"></android.widget.Button>
+                tools:text="30" />
         </LinearLayout>
 
 
@@ -459,7 +461,7 @@
                 style="@style/column"
                 android:tag="30"
                 android:textColor="#32116a"
-                tools:text="31"></android.widget.Button>
+                tools:text="31" />
 
             <View
                 android:layout_width="5dp"
@@ -471,7 +473,7 @@
                 style="@style/column"
                 android:tag="31"
                 android:textColor="#32116a"
-                tools:text="32"></android.widget.Button>
+                tools:text="32" />
 
             <View
                 android:layout_width="5dp"
@@ -483,7 +485,7 @@
                 style="@style/column"
                 android:tag="32"
                 android:textColor="#32116a"
-                tools:text="33"></android.widget.Button>
+                tools:text="33" />
 
 
             <View
@@ -497,7 +499,7 @@
                 style="@style/column"
                 android:tag="33"
                 android:textColor="#32116a"
-                tools:text="34"></android.widget.Button>
+                tools:text="34" />
 
             <View
                 android:layout_width="5dp"
@@ -510,7 +512,7 @@
                 style="@style/column"
                 android:tag="34"
                 android:textColor="#32116a"
-                tools:text="35"></android.widget.Button>
+                tools:text="35" />
 
             <View
                 android:layout_width="5dp"
@@ -523,7 +525,7 @@
                 style="@style/column"
                 android:tag="35"
                 android:textColor="#32116a"
-                tools:text="36"></android.widget.Button>
+                tools:text="36" />
         </LinearLayout>
 
     </LinearLayout>
