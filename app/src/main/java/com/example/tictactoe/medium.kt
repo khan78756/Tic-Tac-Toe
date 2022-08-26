@@ -5,7 +5,7 @@ import android.content.DialogInterface
 import android.os.Build
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
+import android.widget.ImageButton
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -102,7 +102,7 @@ class medium : AppCompatActivity(), View.OnClickListener{
         if (!gameactive)
             return
 
-        var buttonclicked = findViewById<Button>(v!!.id)
+        var buttonclicked = findViewById<ImageButton>(v!!.id)
         var clicktag = Integer.parseInt(buttonclicked.tag.toString())
         if (fillpos[clicktag] != -1)
             return
@@ -110,14 +110,16 @@ class medium : AppCompatActivity(), View.OnClickListener{
 
         if (activeplayer == player1)
         {
-            buttonclicked.setText("0")
+
+            buttonclicked.setImageResource(R.drawable.colorize)
             activeplayer = player2
 
             binding.screen.setText("Player-2 Turn")
 
         } else
         {
-            buttonclicked.setText("x")
+
+            buttonclicked.setImageResource(R.drawable.crosslast)
             activeplayer = player1
             binding.screen.setText("Player-1 Turn")
 
@@ -223,42 +225,42 @@ class medium : AppCompatActivity(), View.OnClickListener{
         activeplayer=player1
         gameactive=true
         binding.screen.setText("Player-1 Turn")
-        binding.b1.setText("")
-        binding.b2.setText("")
-        binding.b3.setText("")
-        binding.b4.setText("")
-        binding.b5.setText("")
-        binding.b6.setText("")
-        binding.b7.setText("")
-        binding.b8.setText("")
-        binding.b9.setText("")
-        binding.b10.setText("")
-        binding.b11.setText("")
-        binding.b12.setText("")
-        binding.b13.setText("")
-        binding.b14.setText("")
-        binding.b15.setText("")
-        binding.b16.setText("")
-        binding.b17.setText("")
-        binding.b18.setText("")
-        binding.b19.setText("")
-        binding.b20.setText("")
-        binding.b21.setText("")
-        binding.b22.setText("")
-        binding.b23.setText("")
-        binding.b24.setText("")
-        binding.b25.setText("")
-        binding.b26.setText("")
-        binding.b27.setText("")
-        binding.b28.setText("")
-        binding.b29.setText("")
-        binding.b30.setText("")
-        binding.b31.setText("")
-        binding.b32.setText("")
-        binding.b33.setText("")
-        binding.b34.setText("")
-        binding.b35.setText("")
-        binding.b36.setText("")
+        binding.b1.setImageResource(0)
+        binding.b2.setImageResource(0)
+        binding.b3.setImageResource(0)
+        binding.b4.setImageResource(0)
+        binding.b5.setImageResource(0)
+        binding.b6.setImageResource(0)
+        binding.b7.setImageResource(0)
+        binding.b8.setImageResource(0)
+        binding.b9.setImageResource(0)
+        binding.b10.setImageResource(0)
+        binding.b11.setImageResource(0)
+        binding.b12.setImageResource(0)
+        binding.b13.setImageResource(0)
+        binding.b14.setImageResource(0)
+        binding.b15.setImageResource(0)
+        binding.b16.setImageResource(0)
+        binding.b17.setImageResource(0)
+        binding.b18.setImageResource(0)
+        binding.b19.setImageResource(0)
+        binding.b20.setImageResource(0)
+        binding.b21.setImageResource(0)
+        binding.b22.setImageResource(0)
+        binding.b23.setImageResource(0)
+        binding.b24.setImageResource(0)
+        binding.b25.setImageResource(0)
+        binding.b26.setImageResource(0)
+        binding.b27.setImageResource(0)
+        binding.b28.setImageResource(0)
+        binding.b29.setImageResource(0)
+        binding.b30.setImageResource(0)
+        binding.b31.setImageResource(0)
+        binding.b32.setImageResource(0)
+        binding.b33.setImageResource(0)
+        binding.b34.setImageResource(0)
+        binding.b35.setImageResource(0)
+        binding.b36.setImageResource(0)
 
     }
 }

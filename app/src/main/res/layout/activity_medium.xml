@@ -34,11 +34,12 @@
         android:layout_marginBottom="30dp"
         android:text="Player -1 Turn"
         android:textColor="@color/teal_200"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/turnX" />
+        app:layout_constraintTop_toBottomOf="@+id/turnX"
+        tools:ignore="HardcodedText" />
 
 
     <LinearLayout
@@ -55,12 +56,13 @@
 
         <LinearLayout style="@style/row">
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b1"
                 style="@style/column"
                 android:tag="0"
-                android:textColor="#32116a"
-                tools:text="1"></android.widget.Button>
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                />
 
             <View
                 android:layout_width="5dp"
@@ -68,12 +70,13 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b2"
                 style="@style/column"
                 android:tag="1"
-                android:textColor="#32116a"
-                tools:text="2"></android.widget.Button>
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+         />
 
             <View
                 android:layout_width="5dp"
@@ -81,12 +84,14 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b3"
                 style="@style/column"
                 android:tag="2"
                 android:textColor="#32116a"
-                tools:text="3"></android.widget.Button>
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                tools:text="3"/>
 
             <View
                 android:layout_width="5dp"
@@ -94,12 +99,13 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b4"
                 style="@style/column"
                 android:tag="3"
-                android:textColor="#32116a"
-                tools:text="4" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+           />
 
 
             <View
@@ -108,12 +114,12 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b5"
                 style="@style/column"
                 android:tag="4"
-                android:textColor="#32116a"
-                tools:text="5" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
 
 
             <View
@@ -122,12 +128,12 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b6"
                 style="@style/column"
                 android:tag="5"
-                android:textColor="#32116a"
-                tools:text="6" />
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
         </LinearLayout>
 
         <View
@@ -138,12 +144,12 @@
 
         <LinearLayout style="@style/row">
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b7"
                 style="@style/column"
                 android:tag="6"
-                android:textColor="#32116a"
-                tools:text="7" />
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
 
             <View
                 android:layout_width="5dp"
@@ -151,24 +157,24 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b8"
                 style="@style/column"
                 android:tag="7"
-                android:textColor="#32116a"
-                tools:text="8" />
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
 
             <View
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:background="@color/teal_200" />
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b9"
                 style="@style/column"
                 android:tag="8"
-                android:textColor="#32116a"
-                tools:text="9" />
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
 
             <View
                 android:layout_width="5dp"
@@ -176,12 +182,12 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b10"
                 style="@style/column"
                 android:tag="9"
-                android:textColor="#32116a"
-                tools:text="10" />
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
 
             <View
                 android:layout_width="5dp"
@@ -189,12 +195,12 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b11"
                 style="@style/column"
                 android:tag="10"
-                android:textColor="#32116a"
-                tools:text="11" />
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
 
             <View
                 android:layout_width="5dp"
@@ -202,12 +208,12 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b12"
                 style="@style/column"
                 android:tag="11"
-                android:textColor="#32116a"
-                tools:text="12" />
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
         </LinearLayout>
 
         <View
@@ -217,36 +223,36 @@
 
         <LinearLayout style="@style/row">
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b13"
                 style="@style/column"
                 android:tag="12"
-                android:textColor="#32116a"
-                tools:text="13" />
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
 
             <View
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:background="@color/teal_200" />
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b14"
                 style="@style/column"
                 android:tag="13"
-                android:textColor="#32116a"
-                tools:text="14" />
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
 
             <View
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:background="@color/teal_200" />
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b15"
                 style="@style/column"
                 android:tag="14"
-                android:textColor="#32116a"
-                tools:text="15" />
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
 
 
             <View
@@ -255,12 +261,12 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b16"
                 style="@style/column"
                 android:tag="15"
-                android:textColor="#32116a"
-                tools:text="16" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
 
             <View
                 android:layout_width="5dp"
@@ -268,12 +274,12 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b17"
                 style="@style/column"
                 android:tag="16"
-                android:textColor="#32116a"
-                tools:text="17" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
 
             <View
                 android:layout_width="5dp"
@@ -281,12 +287,12 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b18"
                 style="@style/column"
                 android:tag="17"
-                android:textColor="#32116a"
-                tools:text="18" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
         </LinearLayout>
 
         <View
@@ -296,36 +302,36 @@
 
         <LinearLayout style="@style/row">
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b19"
                 style="@style/column"
                 android:tag="18"
-                android:textColor="#32116a"
-                tools:text="19" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
 
             <View
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:background="@color/teal_200" />
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b20"
                 style="@style/column"
                 android:tag="19"
-                android:textColor="#32116a"
-                tools:text="20" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
 
             <View
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:background="@color/teal_200" />
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b21"
                 style="@style/column"
                 android:tag="20"
-                android:textColor="#32116a"
-                tools:text="21" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
 
 
             <View
@@ -334,12 +340,12 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b22"
                 style="@style/column"
                 android:tag="21"
-                android:textColor="#32116a"
-                tools:text="22" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
 
             <View
                 android:layout_width="5dp"
@@ -347,12 +353,12 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b23"
                 style="@style/column"
                 android:tag="22"
-                android:textColor="#32116a"
-                tools:text="23" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
 
             <View
                 android:layout_width="5dp"
@@ -360,12 +366,12 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b24"
                 style="@style/column"
                 android:tag="23"
-                android:textColor="#32116a"
-                tools:text="24" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
         </LinearLayout>
 
 
@@ -376,36 +382,36 @@
 
         <LinearLayout style="@style/row">
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b25"
                 style="@style/column"
                 android:tag="24"
-                android:textColor="#32116a"
-                tools:text="25" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
 
             <View
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:background="@color/teal_200" />
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b26"
                 style="@style/column"
                 android:tag="25"
-                android:textColor="#32116a"
-                tools:text="26" />
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
 
             <View
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:background="@color/teal_200" />
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b27"
                 style="@style/column"
                 android:tag="26"
-                android:textColor="#32116a"
-                tools:text="27" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
 
 
             <View
@@ -414,12 +420,12 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b28"
                 style="@style/column"
                 android:tag="27"
-                android:textColor="#32116a"
-                tools:text="28" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
 
             <View
                 android:layout_width="5dp"
@@ -427,12 +433,12 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b29"
                 style="@style/column"
                 android:tag="28"
-                android:textColor="#32116a"
-                tools:text="29" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
 
             <View
                 android:layout_width="5dp"
@@ -440,12 +446,12 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b30"
                 style="@style/column"
                 android:tag="29"
-                android:textColor="#32116a"
-                tools:text="30" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
         </LinearLayout>
 
 
@@ -456,36 +462,36 @@
 
         <LinearLayout style="@style/row">
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b31"
                 style="@style/column"
                 android:tag="30"
-                android:textColor="#32116a"
-                tools:text="31" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
 
             <View
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:background="@color/teal_200" />
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b32"
                 style="@style/column"
                 android:tag="31"
-                android:textColor="#32116a"
-                tools:text="32" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
 
             <View
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:background="@color/teal_200" />
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b33"
                 style="@style/column"
                 android:tag="32"
-                android:textColor="#32116a"
-                tools:text="33" />
+                android:padding="10dp"
+                android:scaleType="fitCenter" />
 
 
             <View
@@ -494,12 +500,12 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b34"
                 style="@style/column"
                 android:tag="33"
-                android:textColor="#32116a"
-                tools:text="34" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
 
             <View
                 android:layout_width="5dp"
@@ -507,12 +513,12 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b35"
                 style="@style/column"
                 android:tag="34"
-                android:textColor="#32116a"
-                tools:text="35" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
 
             <View
                 android:layout_width="5dp"
@@ -520,12 +526,12 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b36"
                 style="@style/column"
                 android:tag="35"
-                android:textColor="#32116a"
-                tools:text="36" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
         </LinearLayout>
 
     </LinearLayout>

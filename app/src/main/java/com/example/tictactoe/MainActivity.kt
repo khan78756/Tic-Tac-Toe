@@ -8,10 +8,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.annotation.IntegerRes
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
+import androidx.core.view.setPadding
+import com.example.tictactoe.R.drawable.tick
 import com.example.tictactoe.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener
@@ -81,7 +84,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener
         if (!gameactive)
             return
 
-        var buttonclicked = findViewById<Button>(v!!.id)
+        var buttonclicked = findViewById<ImageButton>(v!!.id)
         var clicktag = Integer.parseInt(buttonclicked.tag.toString())
         if (fillpos1[clicktag] != -1)
             return
@@ -89,21 +92,20 @@ class MainActivity : AppCompatActivity(), View.OnClickListener
 
         if (activeplayer == player1)
         {
-            buttonclicked.setText("0")
+            buttonclicked.setImageResource(R.drawable.colorize)
             activeplayer = player2
 
            binding.screen.setText("Player-2 Turn")
 
-           // buttonclicked.setTextColor(Color.parseColor())
 
 
         } else
         {
-            buttonclicked.setText("x")
+
+            buttonclicked.setImageResource(R.drawable.crosslast)
             activeplayer = player1
             binding.screen.setText("Player-1 Turn")
 
-           // buttonclicked.setTextColor(Color.WHITE)
 
         }
         checkforwin()
@@ -179,20 +181,22 @@ class MainActivity : AppCompatActivity(), View.OnClickListener
 
        //Funtion For restart of Game
 
+    @SuppressLint("SetTextI18n")
     private fun restartgame() {
       fillpos1=intArrayOf(-1,-1,-1,-1,-1,-1,-1,-1,-1)
         activeplayer=player1
         gameactive=true
         binding.screen.setText("Player-1 Turn")
-           binding.b1.setText("")
-        binding.b2.setText("")
-        binding.b3.setText("")
-        binding.b4.setText("")
-        binding. b5.setText("")
-        binding. b6.setText("")
-        binding. b7.setText("")
-        binding.b8.setText("")
-        binding. b9.setText("")
+        binding.b1.setImageResource(0)
+        binding.b2.setImageResource(0)
+        binding.b3.setImageResource(0)
+        binding.b4.setImageResource(0)
+        binding. b5.setImageResource(0)
+        binding. b6.setImageResource(0)
+        binding. b7.setImageResource(0)
+        binding.b8.setImageResource(0)
+        binding. b9.setImageResource(0)
+
     }
 
 }

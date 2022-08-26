@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <View
+        android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:background="@color/white"
@@ -15,6 +16,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/turnX"
@@ -24,18 +26,15 @@
         android:layout_marginBottom="10dp"
         android:padding="16dp"
         android:text="Tic Tac Toe"
-        android:textSize="35dp"
         android:textColor="@color/teal_200"
+        android:textSize="35dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/screen"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <TextView
         android:id="@+id/screen"
@@ -44,9 +43,9 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="30dp"
         android:text="Player -1 Turn"
+        android:textColor="@color/teal_200"
         android:textSize="25dp"
         android:textStyle="bold"
-        android:textColor="@color/teal_200"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,12 +65,12 @@
 
         <LinearLayout style="@style/row">
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b1"
                 style="@style/column"
-                android:tag="0"
-                android:textColor="#32116a"
-                tools:text="1"/>
+                android:padding="25dp"
+                android:scaleType="fitCenter"
+                android:tag="0" />
 
             <View
                 android:layout_width="5dp"
@@ -79,12 +78,12 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b2"
                 style="@style/column"
-                android:tag="1"
-                android:textColor="#32116a"
-                tools:text="2"/>
+                android:padding="25dp"
+                android:scaleType="fitCenter"
+                android:tag="1" />
 
             <View
                 android:layout_width="5dp"
@@ -92,12 +91,12 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b3"
                 style="@style/column"
-                android:tag="2"
-                android:textColor="#32116a"
-                tools:text="3"/>
+                android:padding="25dp"
+                android:scaleType="fitCenter"
+                android:tag="2" />
         </LinearLayout>
 
         <View
@@ -108,12 +107,12 @@
 
         <LinearLayout style="@style/row">
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b4"
                 style="@style/column"
-                android:tag="3"
-                android:textColor="#32116a"
-                tools:text="4"/>
+                android:padding="25dp"
+                android:scaleType="fitCenter"
+                android:tag="3" />
 
             <View
                 android:layout_width="5dp"
@@ -121,24 +120,24 @@
                 android:background="@color/teal_200" />
 
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b5"
                 style="@style/column"
-                android:tag="4"
-                android:textColor="#32116a"
-                tools:text="5"/>
+                android:padding="25dp"
+                android:scaleType="fitCenter"
+                android:tag="4" />
 
             <View
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:background="@color/teal_200" />
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b6"
                 style="@style/column"
-                android:tag="5"
-                android:textColor="#32116a"
-                tools:text="6"/>
+                android:padding="25dp"
+                android:scaleType="fitCenter"
+                android:tag="5" />
         </LinearLayout>
 
         <View
@@ -148,36 +147,36 @@
 
         <LinearLayout style="@style/row">
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b7"
                 style="@style/column"
-                android:tag="6"
-                android:textColor="#32116a"
-                tools:text="7"/>
+                android:padding="25dp"
+                android:scaleType="fitCenter"
+                android:tag="6" />
 
             <View
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:background="@color/teal_200" />
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b8"
                 style="@style/column"
-                android:tag="7"
-                android:textColor="#32116a"
-                tools:text="8"/>
+                android:padding="25dp"
+                android:scaleType="fitCenter"
+                android:tag="7" />
 
             <View
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:background="@color/teal_200" />
 
-            <android.widget.Button
+            <android.widget.ImageButton
                 android:id="@+id/b9"
                 style="@style/column"
-                android:tag="8"
-                android:textColor="#32116a"
-                tools:text="9"/>
+                android:padding="25dp"
+                android:scaleType="fitCenter"
+                android:tag="8" />
 
         </LinearLayout>
     </LinearLayout>
@@ -190,11 +189,11 @@
         android:layout_marginBottom="40dp"
         android:backgroundTint="#32116a"
         android:text="Exit"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
